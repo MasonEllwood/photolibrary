@@ -9,30 +9,12 @@ const styles = (theme) => ({
         width: '100%',
     },
     logo: {
-        marginBottom: '5px',
-        width: '86px',
-        height: '86px',
+        marginBottom: '20px',
     },
-    header: {
-        color: '#ffffff',
-        fontSize: '36px',
-        fontWeight: '300',
-        fontStyle: 'normal',
-        letterSpacing: 'normal',
-        lineHeight: 'normal',
-        textAlign: 'center',
-        margin: '0px',
-    },
-    subText: {
-        color: '#ffffff',
-        fontSize: '16px',
-        fontWeight: '300',
-        fontStyle: 'normal',
-        letterSpacing: 'normal',
-        lineHeight: 'normal',
-        textAlign: 'center',
-        marginTop: '10px',
-        marginBottom: '30px',
+    button: {
+        width: '375px',
+        borderRadius: '0px',
+        backgroundColor: 'white',
     },
 });
 
