@@ -5,7 +5,6 @@ import { history } from './redux/config';
 
 import Snackbar from './components/Snackbar';
 import Main from './containers/Main';
-import DashboardMain from './containers/DashboardMain/DarboardMain';
 
 const _Router = (props) => {
     return (
@@ -13,7 +12,6 @@ const _Router = (props) => {
             <Snackbar />
             <Router history={history}>
                 <Switch>
-                    <Route path="/home" component={DashboardMain} />
                     <Route path="/" component={Main} />
                 </Switch>
             </Router>

@@ -20,5 +20,6 @@ code {
 }
 
 #root {
-    background-image: linear-gradient(180deg, #605b85 0%, #323045 100%);
+    /* background-image: linear-gradient(180deg, #261e34 0%, #323045 100%); */
+    background-color: #261e34;
 }

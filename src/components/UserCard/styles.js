@@ -2,16 +2,11 @@ const styles = (theme) => ({
     drawerProfile: {
         display: 'flex',
         alignItems: 'center',
+        justifyContent: 'space-around',
     },
-    h3: {
-        margin: '0px',
-        color: '#ffffff',
-    },
-    a: {
-        color: '#ffffff',
-    },
-    avatar: {
-        marginRight: '8px',
+    large: {
+        width: 55,
+        height: 55,
     },
 });
 
