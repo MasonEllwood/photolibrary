@@ -12,6 +12,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 
 import UserCard from '../../components/UserCard';
 import TrendingSingle from '../../components/TrendingSingle';
+import TrendingSlider from '../../components/TrendingSlider';
 
 import logo from '../../assets/images/logoblacksmwhite.png';
 
@@ -110,6 +111,8 @@ const DashboardMain = (props) => {
                 </div>
                 <Divider />
                 <TrendingSingle />
+                <Divider />
+                <TrendingSlider />
                 <Divider />
             </Drawer>
         </div>
