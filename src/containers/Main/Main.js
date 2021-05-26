@@ -23,8 +23,8 @@ const Main = (props) => {
             <CssBaseline />
             <AppBar position="fixed" className={clsx(classes.appBar, classes.appBarShift)}>
                 <Toolbar>
-                    <Typography variant="h6" noWrap>
-                        something
+                    <Typography variant="p" noWrap>
+                        Dashboard
                     </Typography>
                 </Toolbar>
             </AppBar>
