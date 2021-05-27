@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
 import clsx from 'clsx';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import AppBar from '@material-ui/core/AppBar';
@@ -9,14 +10,28 @@ import Typography from '@material-ui/core/Typography';
 import SidebarLeft from '../SidebarLeft';
 import SidebarRight from '../SidebarRight';
 
+import { setTrending } from '../../redux/actions/trending';
+
 // Material UI
 import { withStyles } from '@material-ui/core/styles';
+
+import useCoinGecko from '../../hooks/useCoinGecko';
+// import useOpenWeather from '../../hooks/useOpenWeather';
 
 // Styles
 import styles from './styles';
 
 const Main = (props) => {
     const { classes } = props;
+    useCoinGecko('search/trending');
+
+    // console.log(openCoinGecko);
+
+    // useEffect(() => {
+    //     props.setTrending(openCoinGecko);
+    // }, [openCoinGecko]);
+
+    // console.log(props);
 
     return (
         <div className={classes.root}>
@@ -58,5 +73,10 @@ const Main = (props) => {
         </div>
     );
 };
+
+// const mapStateToProps = function (store) {
+//     const props = { trending: store.trending };
+//     return props;
+// };
 
 export default withStyles(styles)(Main);

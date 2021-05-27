@@ -1,9 +1,10 @@
-export const ZIP_SELECTED = 'ZIP_SELECTED';
+export const SET_TRENDING = 'SET_TRENDING';
 export const INIT = '';
 
 export default function (state = INIT, { type, payload }) {
+    console.log(type);
     switch (type) {
-        case ZIP_SELECTED:
+        case SET_TRENDING:
             return payload;
 
         default:
