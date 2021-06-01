@@ -21,7 +21,6 @@ const Searchbar = ({ classes, zip, setZip }) => {
     const history = useHistory();
 
     function handleChange(e) {
-        console.log(e.target.value);
         setZipLocal(e.target.value);
     }
 

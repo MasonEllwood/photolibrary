@@ -17,6 +17,47 @@ const styles = (theme) => ({
         // necessary for content to be below app bar
         ...theme.mixins.toolbar,
     },
+    trendingList: {
+        display: 'flex',
+        justifyContent: 'space-between',
+        padding: '5px 15px',
+    },
+    logoBack: {
+        width: '50px',
+        height: '50px',
+        borderRadius: '10px',
+        backgroundColor: '#80755c',
+        alignItems: 'center',
+        justifyContent: 'center',
+        display: 'flex',
+    },
+    logo: {
+        width: '89%',
+        borderRadius: '9px',
+    },
+    pricingInfo: {
+        textAlign: 'right',
+    },
+    symbole: {
+        margin: '5px 0px',
+        fontWeight: '700',
+        color: '#867a8f',
+    },
+    pricingInfoContent: {
+        margin: '5px 0px',
+        fontWeight: '700',
+        color: '#867a8f',
+    },
+    pricingInfoName: {
+        margin: '5px 0px',
+        fontWeight: '700',
+        color: '#80755c',
+    },
+    trending: {
+        color: '#80755C',
+        margin: '10px 0px 15px 15px',
+        textDecoration: 'underline',
+    },
 });
 
 export default styles;

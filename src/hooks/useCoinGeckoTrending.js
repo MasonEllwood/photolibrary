@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import axios from 'axios';
 import { setTrending } from '../redux/actions/trending';
 
-const useCoinGecko = (props) => {
+const useCoinGeckoTrending = (props) => {
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -19,4 +19,4 @@ const useCoinGecko = (props) => {
     }, []);
 };
 
-export default useCoinGecko;
+export default useCoinGeckoTrending;
