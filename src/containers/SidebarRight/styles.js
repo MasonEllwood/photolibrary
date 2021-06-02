@@ -26,7 +26,7 @@ const styles = (theme) => ({
         width: '50px',
         height: '50px',
         borderRadius: '10px',
-        backgroundColor: '#80755c',
+        backgroundColor: '#dedede',
         alignItems: 'center',
         justifyContent: 'center',
         display: 'flex',
@@ -51,10 +51,10 @@ const styles = (theme) => ({
     pricingInfoName: {
         margin: '5px 0px',
         fontWeight: '700',
-        color: '#80755c',
+        color: '#dedede',
     },
     trending: {
-        color: '#80755C',
+        color: '#dedede',
         margin: '10px 0px 15px 15px',
         textDecoration: 'underline',
     },

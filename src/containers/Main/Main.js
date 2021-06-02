@@ -2,12 +2,15 @@ import React from 'react';
 import clsx from 'clsx';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
+
 import Typography from '@material-ui/core/Typography';
 
 // Containers
 import SidebarLeft from '../SidebarLeft';
 import SidebarRight from '../SidebarRight';
+
+// Components
+import MenuList from '../../components/MenuList';
 
 // Material UI
 import { withStyles } from '@material-ui/core/styles';
@@ -22,11 +25,7 @@ const Main = (props) => {
         <div className={classes.root}>
             <CssBaseline />
             <AppBar position="fixed" className={clsx(classes.appBar, classes.appBarShift)}>
-                <Toolbar>
-                    <Typography variant="p" noWrap>
-                        Dashboard
-                    </Typography>
-                </Toolbar>
+                <MenuList />
             </AppBar>
             <SidebarLeft />
             <main className={(classes.content, classes.contentShift)}>
