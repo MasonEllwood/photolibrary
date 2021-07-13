@@ -5,11 +5,11 @@ import Button from '@material-ui/core/Button';
 import styles from './styles';
 import Searchbar from '../Searchbar';
 
-import { useHistory } from 'react-router';
+// import { useHistory } from 'react-router';
 
 const MenuList = (props) => {
     const { classes } = props;
-    const history = useHistory();
+    // const history = useHistory();
 
     return (
         <div className={classes.menuList}>
@@ -19,17 +19,15 @@ const MenuList = (props) => {
                         className={classes.menuItems}
                         variant="p"
                         onClick={() => {
-                            console.log('onClick');
-                            history.push('/details');
+                            props.menuChange('home');
                         }}>
-                        Details
+                        Home
                     </Button>
                     <Button
                         className={classes.menuItems}
                         variant="p"
                         onClick={() => {
-                            console.log('onClick');
-                            history.push('/profile');
+                            props.menuChange('profile');
                         }}>
                         Profile
                     </Button>
@@ -37,8 +35,7 @@ const MenuList = (props) => {
                         className={classes.menuItems}
                         variant="p"
                         onClick={() => {
-                            console.log('onClick');
-                            history.push('/profit-loss');
+                            props.menuChange('profit-loss');
                         }}>
                         Profit/Loss
                     </Button>
@@ -46,8 +43,7 @@ const MenuList = (props) => {
                         className={classes.menuItems}
                         variant="p"
                         onClick={() => {
-                            console.log('onClick');
-                            history.push('/transactions');
+                            props.menuChange('transactions');
                         }}>
                         Transactions
                     </Button>
@@ -55,8 +51,7 @@ const MenuList = (props) => {
                         className={classes.menuItems}
                         variant="p"
                         onClick={() => {
-                            console.log('onClick');
-                            history.push('/alert');
+                            props.menuChange('alert');
                         }}>
                         Alert
                     </Button>
@@ -64,8 +59,7 @@ const MenuList = (props) => {
                         className={classes.menuItems}
                         variant="p"
                         onClick={() => {
-                            console.log('onClick');
-                            history.push('/news');
+                            props.menuChange('news');
                         }}>
                         News
                     </Button>

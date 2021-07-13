@@ -29,27 +29,52 @@ const SidebarLeft = (props) => {
                 <img className={classes.logo} src={logo} alt="Krunkto Logo" />
             </div>
             <div className={classes.iconButton}>
-                <IconButton color="secondary" aria-label="all apps">
+                <IconButton
+                    color="secondary"
+                    aria-label="all apps"
+                    onClick={() => {
+                        props.menuChange('all');
+                    }}>
                     <AppsIcon fontSize="large" />
                 </IconButton>
             </div>
             <div className={classes.iconButton}>
-                <IconButton color="secondary" aria-label="trending up">
+                <IconButton
+                    color="secondary"
+                    aria-label="trending up"
+                    onClick={() => {
+                        props.menuChange('trending-up');
+                    }}>
                     <TrendingUpIcon fontSize="large" />
                 </IconButton>
             </div>
             <div className={classes.iconButton}>
-                <IconButton color="secondary" aria-label="trending down">
-                    <TrendingDownIcon fontSize="large" />
+                <IconButton
+                    color="secondary"
+                    aria-label="trending down"
+                    onClick={() => {
+                        props.menuChange('trending-down');
+                    }}>
+                    <TrendingDownIcon fontSize="trending-down" />
                 </IconButton>
             </div>
             <div className={classes.iconButton}>
-                <IconButton color="secondary" aria-label="collections">
-                    <CollectionsIcon fontSize="large" />
+                <IconButton
+                    color="secondary"
+                    aria-label="collections"
+                    onClick={() => {
+                        props.menuChange('collections');
+                    }}>
+                    <CollectionsIcon fontSize="collections" />
                 </IconButton>
             </div>
             <div className={classes.iconButton}>
-                <IconButton color="secondary" aria-label="set alarm">
+                <IconButton
+                    color="secondary"
+                    aria-label="set alarm"
+                    onClick={() => {
+                        props.menuChange('alarm');
+                    }}>
                     <AlarmIcon fontSize="large" />
                 </IconButton>
             </div>

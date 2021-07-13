@@ -15,8 +15,6 @@ const SidebarRight = (props) => {
     useCoinGeckoTrending('search/trending');
 
     const trendingList = props.trending.coins.map((data, id) => {
-        console.log(data);
-        console.log(id);
         return (
             <div className={classes.trendingList} key={id}>
                 <div className={classes.logoInfo}>

@@ -49,7 +49,7 @@ const styles = (theme) => ({
         color: '#867a8f',
     },
     pricingInfoName: {
-        margin: '5px 0px',
+        margin: '0px',
         fontWeight: '700',
         color: '#dedede',
     },
