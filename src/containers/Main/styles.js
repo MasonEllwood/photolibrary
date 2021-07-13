@@ -9,7 +9,7 @@ const styles = (theme) => ({
         }),
     },
     appBarShift: {
-        width: `calc(100% - 90px)`,
+        width: `calc(100%)`,
         marginLeft: 90,
         transition: theme.transitions.create(['margin', 'width'], {
             easing: theme.transitions.easing.easeOut,

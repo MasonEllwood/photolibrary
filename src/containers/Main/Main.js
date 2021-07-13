@@ -1,11 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import clsx from 'clsx';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import AppBar from '@material-ui/core/AppBar';
-
-// Containers
-import SidebarLeft from '../SidebarLeft';
-import SidebarRight from '../SidebarRight';
 
 // Components
 import MenuList from '../../components/MenuList';
@@ -26,28 +21,24 @@ const Main = (props) => {
         setMenuItem(e);
     }
 
-    console.log(menuItem);
-
     return (
         <div className={classes.root}>
             <CssBaseline />
-            <AppBar position="fixed" className={clsx(classes.appBar, classes.appBarShift)}>
+            <AppBar
+                position="fixed"
+                color="transparent"
+                elevation={0}
+                className={(classes.appBar, classes.appBarShift)}>
                 <MenuList
                     menuChange={(e) => {
                         handleMenuChange(e);
                     }}
                 />
             </AppBar>
-            <SidebarLeft
-                menuChange={(e) => {
-                    handleMenuChange(e);
-                }}
-            />
             <main className={(classes.content, classes.contentShift)}>
                 <div className={classes.drawerHeader} />
                 {menuItem === 'home' ? <Home /> : <Profile />}
             </main>
-            <SidebarRight />
         </div>
     );
 };

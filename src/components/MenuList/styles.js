@@ -1,14 +1,13 @@
 const styles = (theme) => ({
     menuList: {
-        width: `calc(100% - 330px)`,
+        width: `calc(100%)`,
     },
     toolbar: {
         display: 'flex',
         justifyContent: 'space-between',
     },
     menuItems: {
-        paddingRight: '15px',
-        fontWeight: '500',
+        fontWeight: '900',
         color: '#dedede',
     },
 });
